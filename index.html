@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência XYZ</title>
+
+    <!-- O QUE APARECE NA PESQUISA DO GOOGLE -->
+    <meta name="description" content="Agência de viagens">
+    <meta name="keywords" content="agência, viagens">
+    <meta name="author" content="Agência XYZ">
+    <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/variables.css">
@@ -19,27 +25,92 @@
 
 <body>
     <header class="header">
-    
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="#" class="header-logo-link">
+                    <img src="./src/images/cafe.gif" alt="Logo" class="header-logo-img">
+                </a>
+                <h1 class="header-logo-text">Agência XYZ</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#projetos" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#quem-somos" class="nav-link">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
-    <section class="hero">
-     
-    </section>
+    <main class="conteudo-principal" id="projetos">
+        <section class="paineis">
+            <h1 class="titulo">Nossos projetos</h1>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="btn-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-slides">
+                    <div class="imagem-painel projeto1 mostrar"></div>
+                    <div class="imagem-painel projeto2"></div>
+                    <div class="imagem-painel projeto3"></div>
+                </div>
+                <button class="carousel-btn next" id="btn-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
 
-    <section class="about">
-    </section>
 
-    <section class="services">
-    
-    </section>
+        <section class="quem-somos" id="quem-somos">
+            <div class="conteudo">
+                <div class="informacoes">
+                    <h2 class="titulo">Quem somos</h2>
+                    <p class="texto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus porro odio nemo esse
+                        voluptatibus praesentium. Odio accusamus totam sint nihil ipsum sapiente.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <section class="projects">
-      
-    </section>
+    </main>
 
-    <footer class="footer">
-    
+    <footer class="rodape" id="contato">
+        <nav class="navegacao">
+            <div class="logo">
+                <a href="#"><img src="./src/images/cafe.gif" alt="Logo XYZ" class="imagem"></a>
+                <span class="footer-logo-text">Agencia XYZ</span>
+            </div>
+            <ul class="redes-sociais">
+                <li class="nav-item">
+                    <a href="#" class="rede-social"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="rede-social"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="rede-social"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <p class="copyright">Todos os direitos reservados - 2026. Desenvolvido por <a href="">Agência XYZ</a></p>
     </footer>
+    <a href="#" id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="./src/js/index.js"></script>
 </body>
+
 
 </html>

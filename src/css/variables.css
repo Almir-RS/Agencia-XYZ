@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #d4af37; /* Metallic Gold */
+    --secondary-color: #00bcd4; /* Cyan */
+    --bg-dark: #ffffff; /* White Theme */
+    --bg-card: #f9f9f9; /* Light Gray */
+    --text-primary: #1a1a1a; /* Dark Text */
+    --text-secondary: #555555; /* Medium Text */
+    --transition-speed: 0.3s;
+    --header-height: 80px;
+    --font-main: 'Roboto', sans-serif;
+}
+
